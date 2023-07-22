@@ -7,30 +7,29 @@ body
     margin: 0rem;   
 }
 
-#eyeContainer
+#allOfTheEye
 {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
+    height: 500px;
+    width: 700px;
 }
 
 #emptyEye
 {
-    position: relative;
-    width: 796px;
+    position: absolute;
+    top: 72px;
+    left: 33px;
 }
-
-this is a test
 
 #pupilContainer
 {
     position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 150px;
+    left: 221px;
+    width: 436px;
+    height: 273px;
 }
+
 
 h1 
 {
