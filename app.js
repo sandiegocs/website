@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deltaY = mouseY - containerCenterY;
 
     // Calculate the maximum allowed movement range within the container
-    const maxRangeX = (containerRect.width - pupilImageRect.width) / 2;
+    const maxRangeX = (containerRect.width - pupilImageRect.width) // 2;
     const maxRangeY = (containerRect.height - pupilImageRect.height) / 2;
 
     // Define a scaling factor to adjust the movement speed
@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const limitedY = Math.max(-maxRangeY, Math.min(deltaY * speedScale, maxRangeY));
 
     setTimeout(() => {
-    pupilImage.style.transform = `translate(${limitedX}px, ${limitedY}px)`;
+    pupilImage.style.transform = `translate(${limitedX - 120}px, ${limitedY - 120}px)`;
     }, 140)
 
 
@@ -127,3 +127,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  
