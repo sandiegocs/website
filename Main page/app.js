@@ -34,54 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
     startAnimation(); // Trigger the animation when the page first loads
   });
-/*  
-//Eye tracker for cursor
-document.addEventListener('mousemove', (e) => {
-  
-  console.log(e)
-
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  const anchor = document.getElementById('emptyEye')
-  const rekt = anchor.getBoundingClientRect();
-  const anchorX = rekt.left + rekt.width / 2;
-  const anchorY = rekt.top + rekt.height / 2;
-  
-  const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
-
-  console.log(angleDeg)
-
-  pupilContainer.style.transform = `rotate(${90 + angleDeg}Deg)`;
-})
-
-function angle(cx, cy, ex, ey)
-{
-  const dy = ey - cy;
-  const dx = ex - cx;
-  const rad = Math.atan2(dy, dx);
-  const deg = rad * 180 / Math.PI;
-  return deg;
-}
-
-document.addEventListener('mousemove', (e) => {
-  const mouseX = e.clientX;
-  const mouseY = e.clientY;
-
-  const anchor = document.getElementById('emptyEye');
-  const pupilContainer = document.getElementById('pupilContainer');
-
-  const rekt = anchor.getBoundingClientRect();
-  const anchorX = rekt.left + rekt.width / 2;
-  const anchorY = rekt.top + rekt.height / 2;
-
-  const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
-
-  pupilContainer.style.transform = `rotate(${90 + angleDeg}deg)`;
-});
-*/
-
-
 
 // Eye tracker for cursor
 document.addEventListener('DOMContentLoaded', () => {
@@ -99,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deltaY = mouseY - containerCenterY;
 
     // Calculate the maximum allowed movement range within the container
-    const maxRangeX = (containerRect.width - pupilImageRect.width) // 2;
+    const maxRangeX = (containerRect.width - pupilImageRect.width) / 2;
     const maxRangeY = (containerRect.height - pupilImageRect.height) / 2;
 
     // Define a scaling factor to adjust the movement speed
@@ -110,8 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const limitedY = Math.max(-maxRangeY, Math.min(deltaY * speedScale, maxRangeY));
 
     setTimeout(() => {
-    pupilImage.style.transform = `translate(${limitedX - 120}px, ${limitedY - 120}px)`;
-    }, 140)
+    pupilImage.style.transform = `translate(${limitedX - 130}px, ${limitedY - 120}px)`;
+    }, 180)
 
 
   };
@@ -123,6 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('mousemove', handleMouseMove);
 });
 
+//Button functionality
+const openAboutButton = document.getElementById("aboutButton");
+
+openAboutButton.addEventListener("click", function() {
+    window.location.href = "About page/about.html";
+});
 
 
 
