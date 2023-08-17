@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const openAboutButton = document.getElementById("aboutButton");
 
 openAboutButton.addEventListener("click", function() {
-    window.location.href = "About page/about.html";
+    window.location.href = "C:\Users\DentaSwiss TRIOS\git repo for website\SDCSwebsite\About page\about.html";
 });
 
 
