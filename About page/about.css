@@ -25,6 +25,26 @@ body {
     font-size: 40px;
 }
 
+#pictureContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 3 / 6;
+    grid-column: 5 / 11;
+}
+
+#groupPicture img
+{
+    max-width: 100%; /* Set maximum width to prevent image from overflowing */
+    max-height: 100%; /* Set maximum height to prevent image from overflowing */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    /* Additional properties to control image size */
+    width: 40%; /* Adjust this value to change the image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
 #bodyParagraph
 {
     display: flex;
