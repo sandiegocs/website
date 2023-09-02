@@ -1,7 +1,7 @@
 sandiegocs.org (pending title)
 
 ## Building
-0. Install [Zola](https://getzola.org) and GNU make  
+0. Install [Zola](https://www.getzola.org) (v0.17.Z) and GNU make  
 1. `make` or `zola serve`
 
 ## Adding self to team list
