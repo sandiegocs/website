@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let interval = null;
 
-  const h2Element = document.querySelector("h2");
+  const h2Element = document.getElementById("scrambled");
 
   const startAnimation = () => {
     let iteration = 0;
