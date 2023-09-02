@@ -1,10 +1,25 @@
-body 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body
 {
     display: grid;
     place-items: center;
     height: 100vh;
     background-color: antiquewhite;
-    margin: 0rem;   
+}
+
+h1, h2 {
+    font-family: 'Space Mono', monospace;
+    color: black;
+}
+h1 { font-size: 40px; } /* TODO: replace PX for sizes with a global REM adjustment */
+h2 {
+    font-size: 37px;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 main {
@@ -47,22 +62,6 @@ main {
     transform: translate(-50%, -50%);
 }
 
-h1 
-{
-    font-family: 'Space Mono' , monospace;
-    font-size: 40px;
-    color: black; 
-}
-
-h2
-{
-    font-family: 'Space Mono' , monospace;
-    font-size: 37px;
-    color: black;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
-
 .button-container {
     display: flex;
     justify-content: center;
@@ -90,12 +89,7 @@ h2
     color: antiquewhite;
 }
 
-.raised {
-    margin-top: -70px; /* Raise the outer buttons */
-}
-
-.center {
-    margin-top: 40px; /* Lower the center button */
-}
+.raised { margin-top: -70px; } /* Raise the outer buttons */
+.center { margin-top: 40px; } /* Lower the center button */
 
 
