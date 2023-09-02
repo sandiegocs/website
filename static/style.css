@@ -6,7 +6,7 @@ html, body {
 body {
     display: grid;
     place-items: center;
-    background-color: antiquewhite;
+    background-color: #fff;
 }
 
 h1, h2 {
