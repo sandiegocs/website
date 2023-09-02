@@ -31,9 +31,9 @@ main img { max-width: 100%; }
 .grid {
     display: grid;
     grid: auto / repeat(auto-fill, minmax(250px, 1fr));
-    /*margin: 0 auto;
-    max-width: 80ch;
-    padding: 0 2rem;*/
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 2rem;
 }
 .card {
   display: flex;
