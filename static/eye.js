@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     elem.style.display = "none";
   }
 
+  // TODO : Replace generating string with static
+  //        to remove need to generate a new string
+  //        every page load.
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let interval = null;
 
@@ -37,6 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   startAnimation(); // Trigger the animation when the page first loads
 });
+
+///
+///
+///
 
 // Eye tracker for cursor
 const pupilContainer = document.getElementById('pupilContainer');
