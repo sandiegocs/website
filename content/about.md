@@ -1,5 +1,6 @@
 +++
 title= "About San Diego CS"
+template= "about.html"
 updated= 2023-09-01
 +++
 

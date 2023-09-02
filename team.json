@@ -1,0 +1,36 @@
+{
+	"contributors": [
+		{
+			"user": "ahuang",
+			"name": "Andrew Huang",
+			"role": "Advisor"
+		}, {
+			"user": "pubmix",
+			"name": "Jeremy Fortner",
+			"bio": "Your mind is a canvas.",
+			"portfolio": "https://pubmix.site",
+			"linkedin": "https://linkedin.com/in/pubmix/",
+			"role": "Founder"
+		}, {
+			"user": "fuge03",
+			"name": "Victor Fugere",
+			"role": "Founder"
+		}, {
+			"user": "doamatto",
+			"name": "Matt RONCHETTO",
+			"bio": "I have a habit of making very attractive Nintendo characters.",
+			"portfolio": "https://maatt.fr",
+			"linkedin": "https://fr.linkedin.com/in/matthewronchetto"
+		}, {
+			"user": "gamecake161",
+			"name": "Brian Hall"
+		}, {
+			"user": "telken_",
+			"name": "Gabriel Armado"
+		}, {
+			"user": "thecreamcat"
+		}, {
+			"user": "trixiegoat"
+		}
+	]
+}
