@@ -25,7 +25,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
 }
+main img { max-width: 100%; }
 
 #allOfTheEye {
     position: relative;
