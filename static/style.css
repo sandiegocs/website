@@ -3,8 +3,7 @@ html, body {
     padding: 0;
 }
 
-body
-{
+body {
     display: grid;
     place-items: center;
     height: 100vh;
@@ -28,16 +27,14 @@ main {
     align-items: center;
 }
 
-#allOfTheEye
-{
+#allOfTheEye {
     position: relative;
     align-items: center;
     width: 720px;
     height: 410px;
 }
 
-#pupilContainer
-{
+#pupilContainer {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,16 +43,14 @@ main {
     width: 400px;
 }
 
-#pupilContainer img
-{
+#pupilContainer img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#emptyEye
-{
+#emptyEye {
     position: absolute;
     top: 50%;
     left: calc(50% + 20px);
@@ -79,12 +74,11 @@ main {
     background-color: antiquewhite;
     transition-duration: 0.3s;
     border-color: black;
-    font-family: 'Space Mono' , monospace;
+    font-family: 'Space Mono', monospace;
     font-size: 15px;
 }
 
-.button:hover
-{
+.button:hover {
     background-color: black;
     color: antiquewhite;
 }
