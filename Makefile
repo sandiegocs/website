@@ -1,8 +1,9 @@
 .PHONY: build
 
 build:
-	rm -r public/
-	zola -r $PWD/sandiegocs.org build
-deploy:
-	# TODO: add Rsync for server
-	
+	rm -rf public/
+	zola -r "$(PWD)" build
+deploy: build deploy-rsync
+deploy-rsync: 
+	cp Caddyfile public/Caddyfile
+	rsync -avz public/ maatt.fr:/srv/sandiegocs.org/ 
