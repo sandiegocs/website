@@ -1,39 +1,44 @@
 //text scrambler
 document.addEventListener("DOMContentLoaded", () => {
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let interval = null;
+  // Hide <noscript>
+  for (let elem of document.getElementsByTagName("noscript")) {
+    elem.style.display = "none";
+  }
+
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let interval = null;
+
+  const h2Element = document.querySelector("h2");
+
+  const startAnimation = () => {
+    let iteration = 0;
   
-    const h2Element = document.querySelector("h2");
+    clearInterval(interval);
   
-    const startAnimation = () => {
-      let iteration = 0;
-    
-      clearInterval(interval);
-    
-      interval = setInterval(() => {
-        h2Element.innerText = h2Element.innerText
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return h2Element.dataset.value[index];
-            }
-        
-            return letters[Math.floor(Math.random() * 26)];
-          })
-          .join("");
+    interval = setInterval(() => {
+      h2Element.innerText = h2Element.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return h2Element.dataset.value[index];
+          }
       
-        if (iteration >= h2Element.dataset.value.length) { 
-          clearInterval(interval);
-        }
-      
-        iteration += 1 / 3;
-      }, 30);
-    };
-  
-    h2Element.addEventListener("mouseover", startAnimation);
-  
-    startAnimation(); // Trigger the animation when the page first loads
-  });
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+    
+      if (iteration >= h2Element.dataset.value.length) { 
+        clearInterval(interval);
+      }
+    
+      iteration += 1 / 3;
+    }, 30);
+  };
+
+  h2Element.addEventListener("mouseover", startAnimation);
+
+  startAnimation(); // Trigger the animation when the page first loads
+});
 
 // Eye tracker for cursor
 document.addEventListener('DOMContentLoaded', () => {
@@ -63,9 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
     pupilImage.style.transform = `translate(${limitedX - 130}px, ${limitedY - 120}px)`;
-    }, 180)
-
-
+    }, 180);
   };
 
   const handleMouseMove = (e) => {
@@ -74,15 +77,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener('mousemove', handleMouseMove);
 });
-
-//Button functionality
-const openAboutButton = document.getElementById("aboutButton");
-
-openAboutButton.addEventListener("click", function() {
-    window.location.href = "C:\Users\DentaSwiss TRIOS\git repo for website\SDCSwebsite\About page\about.html";
-});
-
-
-
-
   

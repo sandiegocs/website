@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!--Everything eye related-->
+    <div id="allOfTheEye">
+        <!--Picture of eye without its pupil-->
+        <img src="{{config.base_url}}/assets/eye/eye.png" id="emptyEye">
+        <!--The box that will contain the pupil and restrict its movements-->
+        <div id="pupilContainer">
+            <!--The pupil picture that is going to move-->
+            <img src="{{config.base_url}}/assets/eye/pupil.png" alt="pupil">
+
+        </div>
+        <noscript>
+            <img src="{{config.base_url}}/assets/eye/full.png" alt="An eye.">
+        </noscript>
+    </div>
+
+    <div class="button-container">
+            <a class="button content raised" href="?pas-de-lien">Content</a>
+            <a class="button center" href="/about">About</a>
+            <a class="button raised" href="/news" >News</a>
+    </div>
+
+    <h2 data-value="What is YOUR vision?">What is YOUR vision?</h2>
+{% endblock content %}
+
+{% block scripts %}
+<script src="{{config.base_url}}/eye.js"></script>
+{% endblock scripts %}

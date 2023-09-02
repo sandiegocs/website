@@ -1,0 +1,5 @@
+# Stupid Mac files
+.DS_Store
+
+# Ignore built website
+public/

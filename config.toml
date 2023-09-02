@@ -1,0 +1,14 @@
+base_url= "https://sandiegocs.org"
+default_language= "en"
+compile_sass= false
+generate_feed= true
+ignored_content= ["**/.DS_Store"] # prevent weird things with Macs
+
+[markdown]
+render_emoji= true
+external_links_target_blank= false
+external_links_no_follow= true
+external_links_no_referrer= true
+
+[link_checker]
+external_level= "warn"
