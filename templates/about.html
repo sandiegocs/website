@@ -12,7 +12,7 @@
                 {% set path = "static/assets" %}
                 <img src="{{config.base_url}}/assets/team/{{member.user}}.jpg" onerror="this.style.display='none'">
                 <h3>
-                    {% if member.name %}{{member.name}}{% else %}{{member.user | safe}}{%endif%}
+                    {% if member.name %}{{member.name}}{% else %}{{member.user}}{%endif%}
                     {% if member.role %}
                     <span class="role {{member.role | lower }}">{{member.role}}</span>
                     {%endif%}
