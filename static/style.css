@@ -61,6 +61,12 @@ main img { max-width: 100%; }
 .founder { background: #76bfff; }
 .advisor { background: #ff6554; }
 
+footer { margin-bottom: 2rem; }
+
+/* */
+/* */
+/* */
+
 #allOfTheEye {
     position: relative;
     align-items: center;
