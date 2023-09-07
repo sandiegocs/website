@@ -179,7 +179,7 @@ footer { margin: 0 auto 2rem; }
     background-color: antiquewhite;
     transition-duration: 0.3s;
     border-color: black;
-    font-family: 'Space Mono', monospace;
+    font-family: monospace;
     font-size: 15px;
 }
 
