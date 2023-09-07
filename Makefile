@@ -15,4 +15,4 @@ deploy-rsync:
 	rsync -avz public/ git@maatt.fr:/srv/sandiegocs.org/
 deploy-rsync-staging:
 	cp Caddyfile.staging public/Caddyfile
-	rsync -avz public/ maatt.fr:/srv/sandiegocs.org/
+	rsync -avz public/ git@maatt.fr:/srv/sandiegocs.org/
