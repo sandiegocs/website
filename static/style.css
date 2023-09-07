@@ -54,6 +54,7 @@ header, main, #team, footer {
     padding: 0 1rem;
     width: 100%;
 }
+header > section :last-child { margin-bottom: 1rem; }
 section { width: 100%; }
 main {
     display: flex;
