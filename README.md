@@ -8,6 +8,14 @@ sandiegocs.org (pending domain)
 ## Adding self to team list
 The order of people on this list is irrelevant. However, please append yourself, not prepend. Follow the template as everyone else. Ask for help, if you need it.
 
+```json
+"user": "pubmix",
+"name": "Jeremy Fortner", // optional
+"bio": "Your mind is a canvas.", // optional
+"portfolio": "https://", // optional
+"linkedin": "https://linkedin.com/in/" //optional
+```
+
 ## Deploying
 You need SSH access to the deployment server. [Generate an Ed25519 key-pair (if you don't have one)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and ask [Matt](https://maatt.fr/contact) (`maatt.fr` on Discord) for access.
 
