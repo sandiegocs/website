@@ -11,6 +11,7 @@ San Diego Computer Society (SDCS) is a non-profit, tech-incubator for college st
 We provide students access to workshops, professional resources and network enabling them to collaborate and solve real-world problems. We are the largest and most-rapidly growing student ran organization in San Diego.
 
 ![San Diego CS at San Diego Big Data Hackathon 2022](/assets/sdsu-hackathon.jpg)
+
 We have taken teams of students to Hackathons, tech conferences, and hosted interviews of Tech-industry professionals in the form of a [live podcast](https://pubmix.site/pubcast), previously interviewing industry professionals (software engineers, database administrators, entrepreneurs, startup founders, astro-physicists, book authors etc.)
 
 We host an [online forum](https://discord.gg/HMWFMAE3XQ) with over 350+ student members, which allows for students and teachers to connect, collaborate to work on different projects, share news, ideas and community opportunities such as internships, events and networking.
