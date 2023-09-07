@@ -59,7 +59,12 @@ main {
     flex-direction: column;
     align-items: center;
 }
-main img { max-width: 100%; }
+main > img,
+article > p > img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
 .grid {
     display: grid;
     grid: auto / repeat(auto-fill, minmax(250px, 1fr));
