@@ -1,0 +1,38 @@
+{#
+	A note to people using this. It is not meant to have several "embeds" on
+	one page. It can be adapted to do so, but I don't recommend it.
+
+	Source was orginally from internal code at Vee.DK and used with their
+	permission. This file is not licenced under an open code licence.
+
+	Contact for permission or help using :
+	  https://vee.dk
+	  mailto:vee-ah+muramura@vee.dk
+#}
+
+<div id="gdpr">
+	<p>
+		This website values your privacy. By clicking the button below, this
+		website will load an embed that may contain trackers or other scripts
+		that harm your privacy. An alternative method may be provided below.
+	</p>
+	<button id="i" class="btn">
+		Consent to allowing this page to load this embed.
+	</button>
+</div>
+
+<script>
+	var a = document.getElementById("i");
+	var b = document.getElementById("gdpr");
+	b.style.display = "block";
+	a.addEventListener("click", () => {
+		var i = document.createElement("iframe");
+		i.height = "{% if height %}{{height}}{%else%}315px{%endif%}";
+		i.width = "{% if width %}{{width}}{%else%}560px{%endif%}";
+		i.allow = "autoplay;encrypted-media;picture-in-picture;web-share;fullscreen";
+		i.allowfullscreen = true;
+		i.src = "{{url | safe}}";
+		b.insertAdjacentElement("afterend", i);
+		b.style.display = "none";
+	}, false);
+</script>

@@ -1,8 +1,26 @@
 {% extends "base.html" %}
 
 {% block nav %}{% include "partials/nav.html" %}{% endblock %}
+
+{% block header %}
+    <section>
+        <h2>{{page.title}}</h2>
+        <p>
+            {% if page.authors %}
+            {# TODO: Iterate through properly and use commas #}
+            Written by {{page.authors[0]}} |
+            {% endif %}
+            {% if page.updated %}
+            {{page.updated}} (orig. {{page.date}})
+            {% else %}
+            {{page.date}}
+            {% endif %}
+        </p>
+    </section>
+{% endblock %}
+
 {% block content %}
     <article>
         {{ page.content | safe }}
     </article>
-{% endblock content %}
+{% endblock %}

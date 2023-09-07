@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>San Diego Computer Science</title>
+    <subtitle>San Diego Computer Society (SDCS) is a non-profit, tech-incubator for college students founded out of San Diego Miramar College.</subtitle>
+    <link href="{{ feed_url | escape_xml | safe }}" rel="self" type="application/rss+xml"/>
+    <id>https://{{config.base_url | escape_xml | safe }}/atom.xml</id>
+    <generator>Zola</generator>
+    <updated>{{ last_updated | date(format="%+") }}</updated>
+    <link href="{{config.base_url | escape_xml | safe}}"/>
+    {%- set blog = get_section(path="news/_index.md") -%}
+    {%- set posts = blog.pages -%}
+    {%- for post in posts | sort(attribute="date") | reverse %}
+    <entry xml:lang="en">
+      <title>{{ post.title }}</title>
+      <author><name>San Diego Computer Science</name></author>
+      <link href="{{ post.permalink | escape_xml | safe }}"/>
+      <id>{{post.permalink | escape_xml | safe }}</id>
+      <published>{{ post.date | date(format="%+") }}</published>
+      <updated>{% if post.updated %}{{ post.updated | date(format="%+")}}{% else %}{{ post.date | date(format="%+") }}{% endif %}</updated>
+      <content type="html">{% if post.summary %}{{ post.summary }}{% else %}{{ post.content }}{% endif %}</content>
+    </entry>
+    {%- endfor %}
+</feed>
