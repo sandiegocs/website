@@ -8,7 +8,7 @@ sandiegocs.org (pending domain)
 ## Adding self to team list
 The order of people on this list is irrelevant. However, please append yourself, not prepend. Follow the template as everyone else. Ask for help, if you need it.
 
-```json
+```js
 "user": "pubmix",
 "name": "Jeremy Fortner", // optional
 "bio": "Your mind is a canvas.", // optional
