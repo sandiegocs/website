@@ -5,7 +5,7 @@
 {% block content %}
 <article>
     {{ page.content | safe }}
-    <section class="centre" id="team">
+    <section id="team">
         <h2>Our team</h2>
         {% set team = load_data(path="team.json") %}
         <div class="grid">
