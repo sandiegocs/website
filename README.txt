@@ -8,7 +8,7 @@ sandiegocs.org (pending title)
 The order of people on this list is irrelevant. However, please append yourself, not prepend. Follow the template as everyone else. Ask for help, if you need it.
 
 ## Deploying
-You need SSH access to the deployment server. Ask [Matt](https://maatt.fr/contact) for this.
+You need SSH access to the deployment server. [Generate an Ed25519 key-pair (if you don't have one)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and ask [Matt](https://maatt.fr/contact) for access.
 
 0. Install rsync.
 1. `make deploy` or `make deploy-stage`
