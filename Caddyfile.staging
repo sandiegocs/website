@@ -1,3 +1,4 @@
+#staging.sandiegocs.org,
 staging-sdcs.maatt.fr {
 	# Cache control
     header Cache-Control "max-age=3600"
