@@ -8,7 +8,9 @@ authors= ["Jeremy Fortner"]
 
 Dr. Afshin Beheshti is a bioinformatics researcher at NASA Ames Research Center. Dr. Beheshti has previously worked COVID-19, cancer research and currently space biology. Dr. Beheshti leads research groups, specifically AWG. AWG gives an opportunity to individuals such as students to explore scientific research. 
 
-Interested in contacting Dr. Beheshti? Reach out to him [on Linkedin](https://www.linkedin.com/in/afshinbeheshti/) or e-mail him at `afshin.beheshti@nasa.gov`
+Interested in contacting Dr. Beheshti? Reach out to him [on Linkedin](https://www.linkedin.com/in/afshinbeheshti/) or e-mail him at `afshin.beheshti@nasa.gov`.
+
+Watch our interview with Dr. Afshin Beheshti [on YouTube](https://youtube.com/watch?v=oW_VLaO1RgA) or [listen wherever you get your podcasts.](/podcast)
 
 ## Cool links
 - [NASA Gene Labs](https://genelab.nasa.gov/) (`https://genelab.nasa.gov/`)
