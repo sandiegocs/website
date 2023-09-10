@@ -44,8 +44,6 @@ nav span {
     color: #000;
     font-weight: 700;
     font-size: 37px;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 header, main, #team, footer {
@@ -62,7 +60,7 @@ main {
     align-items: center;
 }
 main > img,
-article > p > img {
+article img {
     max-width: 100%;
     margin: 0 auto;
     display: block;
@@ -138,10 +136,12 @@ footer { margin: 0 auto 2rem; }
 /* */
 /* */
 
-#allOfTheEye {
+#allOfTheEye {}
+
+/*#allOfTheEye {
     position: relative;
     align-items: center;
-    width: 720px;
+    width: 100%;
     height: 410px;
 }
 
@@ -166,35 +166,4 @@ footer { margin: 0 auto 2rem; }
     top: 50%;
     left: calc(50% + 20px);
     transform: translate(-50%, -50%);
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 140px; /* Adjust the height as needed */
-}
-
-.button {
-    padding: 10px 15px;
-    cursor: pointer;
-    margin: 0 100px; /* Increase horizontal spacing */
-    width: 110px;
-    text-align: center;
-    background-color: antiquewhite;
-    transition-duration: 0.3s;
-    border-color: black;
-    font-family: monospace;
-    font-size: 15px;
-}
-
-.button:hover {
-    background-color: black;
-    color: antiquewhite;
-}
-
-.raised { margin-top: -70px; } /* Raise the outer buttons */
-.center { margin-top: 40px; } /* Lower the center button */
-
-
+}*/
