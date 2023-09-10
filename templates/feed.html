@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block nav %}{% include "partials/nav.html" %}{% endblock %}
+
+{% block header %}
+    <section><h1>{{section.title}}</h1></section>
+{% endblock %}
+
+{% block content %}
+	<section>
+	    {%- set pages = section.pages -%}
+	    {%- for page in pages | sort(attribute="date") | reverse -%}
+	    {%- set date = page.date | date(format="%+") %}
+	    <div class="item">
+	      <a href="{{page.permalink}}">{{ page.title }}</a>
+	      <time datetime="{{ date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>
+	      </div>
+	    </div>
+	    {%- endfor %}
+	</section>
+{% endblock %}
