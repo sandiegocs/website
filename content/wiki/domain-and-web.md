@@ -6,7 +6,7 @@ date= "2023-09-09"
 The `sandiegocs.org` domain is the official domain of SDCS. Sometimes, an officer may need to set DNS records to verify SDCS as the owner of the domain.
 
 ## DNS and domain management
-DNS is handled via Cloudflare with the primary custodial account managed by Matthew RONCHETTO. Access to Cloudflare is granted upon request to any officer. For non-officers who need access to request a record change, contact an officer who has DNS access to make the record change on your behalf.
+DNS is handled via Cloudflare with the primary custodial account [managed by Matthew RONCHETTO.](/~doamatto) Access to Cloudflare is granted upon request to any officer. For non-officers who need access to request a record change, contact an officer who has DNS access to make the record change on your behalf.
 
 ## Adding self to `/about`
 The `/about` page contains a list of all the officers, alumni, advisors, and members the organisation has had. Individuals can add themselves to the list by appending themselves to the `/team.json` file in the site's source. A template is available below to guide adding oneself.
