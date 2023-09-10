@@ -3,7 +3,7 @@ sandiegocs.org {
     header Cache-Control "max-age=3600"
 	header /static/* Cache-Control "max-age=31536000"
 
-	root * /srv/sandiegocs.org/
+	root * /home/git/sandiegocs.org/
 	encode zstd gzip
 	file_server {
 		precompressed br

@@ -12,7 +12,7 @@ deploy: build deploy-rsync
 stage: build-staging deploy-rsync-staging
 deploy-rsync: 
 	cp Caddyfile public/Caddyfile
-	rsync -avrz public/ git@maatt.fr:/srv/sandiegocs.org/
+	rsync -avrz public/ git@maatt.fr:sandiegocs.org
 deploy-rsync-staging:
 	cp Caddyfile.staging public/Caddyfile
-	rsync -avrz public/ git@maatt.fr:/srv/sandiegocs.org/
+	rsync -avrz public/ git@maatt.fr:staging.sandiegocs.org
