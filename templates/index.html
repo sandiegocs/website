@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <!--Everything eye related-->
+    <img src="{{config.base_url | safe}}/assets/eye/full.png" alt="An eye.">
+    <h2 id="scrambled" data-value="What is YOUR vision?">What is YOUR vision?</h2>
+    <!-- TODO: Replace with non-absolute styling to allow scaling.
     <div id="allOfTheEye">
-        <!--Picture of eye without its pupil-->
+
+        {# Picture of eye without its pupil #}
         <img src="{{config.base_url}}/assets/eye/eye.png" id="emptyEye">
-        <!--The box that will contain the pupil and restrict its movements-->
+        {# The box that will contain the pupil and restrict its movements #}
         <div id="pupilContainer">
-            <!--The pupil picture that is going to move-->
+            {# The pupil picture that is going to move #}
             <img src="{{config.base_url}}/assets/eye/pupil.png" alt="pupil">
 
         </div>
-        <noscript>
-            <img src="{{config.base_url}}/assets/eye/full.png" alt="An eye.">
-        </noscript>
+        <noscript><img src="{{config.base_url | safe}}/assets/eye/full.png" alt="An eye."></noscript>
+    -->
     </div>
 
-    <div class="button-container">
-            <a class="button content raised" href="/podcast">Podcast</a>
-            <a class="button center" href="/about">About</a>
-            <a class="button raised" href="/news" >News</a>
+    <div>
+        <a class="btn" href="/news" >News</a> {# TODO: Better name for news #}
+        <a class="btn" href="/podcast">Our Podcast</a>
+        <a class="btn" href="/about">About SDCS</a>
     </div>
-
-    <h2 id="scrambled" data-value="What is YOUR vision?">What is YOUR vision?</h2>
 {% endblock content %}
 
 {% block scripts %}
