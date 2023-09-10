@@ -2,6 +2,9 @@
 title= "Guest speaker : Dr Irwin Jacobs | Qualcomm, UCSD, Moore's Law, AI & San Diego"
 date= "2023-07-26"
 authors= ["Jeremy Fortner"]
+
+[extra]
+thumb= "/assets/thumbs/dr-irwin-jacobs.jpg"
 +++
 
 {{ gdpr(url="https://www.youtube-nocookie.com/embed/Pnq1nqiVyac?cc_load_policy=1&playsinline=1&rel=0") }}

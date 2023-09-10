@@ -2,6 +2,9 @@
 title= "Guest speaker : Dr Afshin Beheshti | AI, Physics, Space Biology"
 date= "2023-06-24"
 authors= ["Jeremy Fortner"]
+
+[extra]
+thumb= "/assets/thumbs/dr-afshin-beheshti.jpg"
 +++
 
 {{ gdpr(url="https://www.youtube-nocookie.com/embed/oW_VLaO1RgA?cc_load_policy=1&playsinline=1&rel=0") }}
