@@ -1,10 +1,9 @@
-#staging.sandiegocs.org,
-staging-sdcs.maatt.fr {
+staging.sandiegocs.net {
 	# Cache control
 	header Cache-Control "max-age=3600"
 	header /static/* Cache-Control "max-age=31536000"
 
-	root * /home/git/staging.sandiegocs.org/
+	root * /home/git/staging.sandiegocs.net/
 	encode zstd gzip
 	file_server {
 		precompressed br
