@@ -1,4 +1,4 @@
-sandiegocs.org (pending domain)
+sandiegocs.net
 
 ## Building
 
@@ -10,4 +10,4 @@ You need SSH access to the deployment server. [Generate an Ed25519 key-pair (if 
 
 0. Install rsync and a `make` tool (like GNU make).
 1. `make deploy` or `make deploy-stage`
-2. View changes : https://sandiegocs.org or https://staging.sandiegocs.org (currently accessible at https://staging-sdcs.maatt.fr)
+2. View changes : [https://sandiegocs.net](https://sandiegocs.net) or [https://staging.sandiegocs.net](https://staging.sandiegocs.net)
