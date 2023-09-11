@@ -1,6 +1,5 @@
 +++
 title= "Contact"
-date= 2023-09-11
 +++
 
 **If you have questions or need to speak with an officer,** please [use the Discord server](https://discord.gg/HMWFMAE3XQ). Emails sent to `*@sandiegocs.net` will not be received, read, or responded to.
