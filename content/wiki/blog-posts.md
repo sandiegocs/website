@@ -33,4 +33,4 @@ For YouTube links, you should be :
 If you need to an image, upload the image to `/static/assets/thumbs/` or `/static/assets/flyers` (whichever is more relevant). If neither are relevant, [ask Matthew](/~doamatto) for help sorting your file — some files may belong best in the `/static/assets` folder.
 
 ## Final steps
-After you write your post, push it to GitHub (`git push`) and ask for an officer to give it a look over. If they think it looks good, they'll deploy the latest version of the website containing your blog post (`make deploy`).
+After you write your post, push it to GitHub (`git push`) and ask for an officer to give it a look over. If they think it looks good, they'll stage the latest version of the website for final checks (`make stage`) and deploy the latest version of the website containing your blog post (`make deploy`).
