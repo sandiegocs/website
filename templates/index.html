@@ -7,11 +7,11 @@
     <div id="allOfTheEye">
 
         {# Picture of eye without its pupil #}
-        <img src="{{config.base_url}}/assets/eye/eye.png" id="emptyEye">
+        <img src="{{config.base_url | safe}}/assets/eye/eye.png" id="emptyEye">
         {# The box that will contain the pupil and restrict its movements #}
         <div id="pupilContainer">
             {# The pupil picture that is going to move #}
-            <img src="{{config.base_url}}/assets/eye/pupil.png" alt="pupil">
+            <img src="{{config.base_url | safe}}/assets/eye/pupil.png" alt="pupil">
 
         </div>
         <noscript><img src="{{config.base_url | safe}}/assets/eye/full.png" alt="An eye."></noscript>
@@ -26,6 +26,6 @@
 {% endblock content %}
 
 {% block scripts %}
-<!--<script src="{{config.base_url}}/eye.js"></script>-->
-<script src="{{config.base_url}}/scramble.js"></script>
+<!--<script src="{{config.base_url | safe}}/eye.js"></script>-->
+<script src="{{config.base_url | safe}}/scramble.js"></script>
 {% endblock scripts %}
