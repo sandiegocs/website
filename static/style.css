@@ -63,7 +63,8 @@ header > section span {
     margin: 0;
     padding: .5rem;
 }
-section { width: 100%; }
+section, article { width: 100%; }
+pre { overflow-x: scroll; }
 main {
     display: flex;
     flex-direction: column;
