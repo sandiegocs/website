@@ -6,7 +6,7 @@ We run our own podcast interviewing industry professionals. Currently, you can l
 
 ---
 
-[Listen to the podcast on YouTube](https://www.youtube.com/channel/UCmATzHriI-1v0Qo2qkTPKpQ)
+[Listen to the podcast on YouTube](https://www.youtube.com/@sandiegocomputerscience)
 
 You can also listen on:
   - Apple Podcasts
