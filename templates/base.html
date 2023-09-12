@@ -3,8 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>{% if page.title %}{{page.title}} | San Diego CS{% elif section.title %}{{section.title}} | San Diego CS{%else%}San Diego CS{%endif%}</title>
+		<title>{% if page.title %}{{page.title|safe}} | San Diego CS{% elif section.title %}{{section.title|safe}} | San Diego CS"{% else %}San Diego CS{% endif %}</title>
 		<link rel="stylesheet" href="{{config.base_url}}/style.css">
+		<meta property="og:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
+		<meta property="twitter:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
+		{% if page.authors %}
+		<meta name="author" content="{{page.authors[0]}}">
+		<meta property="og:type" content="article">
+		{% endif %}
+		{% if page.description %}
+			{% set desc = page.description %}
+		{% elif section.description %}
+			{% set desc = section.description %}
+		{% else %}
+			{% set desc = "San Diego Computer Society (SDCS) is a non-profit, tech-incubator for college students founded out of San Diego Miramar College." %}
+		{% endif %}
+		<meta name="description" content="{{desc}}">
+		<meta property="og:description" content="{{desc}}">
+		{% if page.extra.thumb %}
+		<meta property="og:image" content="{{config.base_url | safe}}{{ page.extra.thumb | safe }}">
+		<meta name="twitter:image" content="{{config.base_url | safe}}{{ page.extra.thumb | safe }}">
+		{% endif %}
 	</head>
 	<body>
 		<header>

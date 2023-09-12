@@ -1,6 +1,7 @@
 +++
 title= "Guest speaker : Dr Irwin Jacobs | Qualcomm, UCSD, Moore's Law, AI & San Diego"
 date= "2023-07-26"
+description= "Dr. Irwin Jacobs is a visionary, American electrical engineer, educator, philanthropist and renowned entrepreneur as the founder of Qualcomm. Watch our interview with Dr. Irwin Jacobs on YouTube or listen wherever you get your podcasts."
 authors= ["Jeremy Fortner"]
 
 [extra]
