@@ -94,13 +94,14 @@ article img {
   padding: 8px 16px;
   max-width: 80%;
   width: 100%;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
-/*@media (min-width: 1000px) { .card { max-width: 300px; } }*/
+@media (min-width: 1000px) { .card { margin: 1rem 0; } }
 .card > h3 {
     display: flex;
     margin: 1rem 0;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .card > h3 > span { margin-left: .5rem; }
 .card > div { margin: .5rem 0; }
