@@ -2,7 +2,9 @@
 title= "Contact"
 +++
 
-**If you have questions or need to speak with an officer,** please [use the Discord server](https://discord.gg/HMWFMAE3XQ). Emails sent to `*@sandiegocs.net` will not be received, read, or responded to.
+**If you have questions,** [join the Discord server](https://discord.gg/HMWFMAE3XQ).
+
+**If you have questions for or need to speak with an officer,** send an e-mail to `officers@sdcs.club`
 
 **For contacting the webmaster**, send an e-mail to `sys+sdcs@maatt.fr`.
 
