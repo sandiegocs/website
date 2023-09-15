@@ -10,25 +10,29 @@
 			"bio": "Your mind is a canvas.",
 			"portfolio": "https://pubmix.site",
 			"linkedin": "https://linkedin.com/in/pubmix/",
-			"role": "Founder"
+			"role": "Officer"
 		}, {
 			"user": "fuge03",
 			"name": "Victor Fugere",
-			"role": "Founder",
+			"role": "Officer",
 			"linkedin": "https://www.linkedin.com/in/victor-fugere-2b833a220/"
 		}, {
 			"user": "doamatto",
 			"name": "Matt RONCHETTO",
 			"bio": "I have a habit of making very attractive Nintendo characters or so I've been told.",
 			"portfolio": "https://maatt.fr",
-			"linkedin": "https://fr.linkedin.com/in/matthewronchetto"
+			"linkedin": "https://fr.linkedin.com/in/matthewronchetto",
+			"role": "Officer"
 		}, {
 			"user": "gamecake161",
-			"name": "Brian Hall"
+			"name": "Brian Hall",
+			"role": "Officer"
 		}, {
-			"user": "thecreamcat"
+			"user": "thecreamcat",
+			"role": "Officer"
 		}, {
-			"user": "trixiegoat"
+			"user": "trixiegoat",
+			"role": "Officer"
 		}
 	]
 }
