@@ -9,7 +9,8 @@
 		<meta property="twitter:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
 		<link rel="canonical" href="{{current_url | safe}}">
 		{% if page.authors %}
-		<meta name="author" content="{{page.authors[0]}}">
+        {% set authors = page.authors | join(sep=", ") %}
+		<meta name="author" content="{{authors}}">
 		<meta property="og:type" content="article">
 		{% endif %}
 		{% if page.description %}

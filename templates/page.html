@@ -8,8 +8,9 @@
         {% if page.authors or page.date %}
         <span>
             {% if page.authors %}
-            {# TODO: Iterate through properly and use commas #}
-            Written by {{page.authors[0]}} |
+            Written by
+            {% set authors = page.authors | join(sep=", ") %}
+            {{ authors }}
             {% endif %}
             {% if page.updated %}
             {{page.updated}} (orig. {{page.date}})
