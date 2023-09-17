@@ -23,4 +23,4 @@ You can also listen on:
   - Spotify
   - Stitcher
 
-For those using other podcast players, search for "San Diego Computer Science", or use this RSS feed: `https://sandiegocs.org/podcast.xml`
+For those using other podcast players, search for "San Diego Computer Science", or use this RSS feed: `https://sandiegocs.net/podcast.xml`

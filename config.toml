@@ -1,4 +1,4 @@
-base_url= "https://sandiegocs.org"
+base_url= "https://sandiegocs.net"
 default_language= "en"
 compile_sass= false
 generate_feed= true
