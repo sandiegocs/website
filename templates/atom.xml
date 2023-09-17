@@ -12,7 +12,9 @@
     {%- for post in posts | sort(attribute="date") | reverse %}
     <entry xml:lang="en">
       <title>{{ post.title }}</title>
-      <author><name>San Diego Computer Science</name></author>
+      {% for author in post.authors %}
+      <author><name>{{author}}</name></author>
+      {% endfor %}
       <link href="{{ post.permalink | escape_xml | safe }}"/>
       <id>{{post.permalink | escape_xml | safe }}</id>
       <published>{{ post.date | date(format="%+") }}</published>
