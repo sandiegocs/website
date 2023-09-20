@@ -3,6 +3,7 @@ title= "Wiki homepage"
 +++
 
 - [Accessing Google Groups](/wiki/google-groups)
+- [Accessing the GitHub organisation](/wiki/join-github)
 - [Adding self to about page](/wiki/add-to-about-page)
 - [Creating blog posts](/wiki/blog-posts)
 - [Domain and web hosting](/wiki/domain-and-web)
