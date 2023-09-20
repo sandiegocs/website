@@ -1,10 +1,13 @@
 <div>
+    {#
     {% if page.path %}
         {% set path = page.path %}
     {% elif section.path %}
         {% set path = section.path %}
     {% endif %}
     {% if path is containing("/wiki") %}<a href="/wiki">Wiki</a>{% endif %}
+    #}
+    <a href="/wiki">Wiki</a>
     <a href="/podcast">Podcast</a>
     <a href="/news">News</a>
     <a href="/about">About</a>
