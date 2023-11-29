@@ -6,7 +6,7 @@ sandiegocs.net
 1. `zola serve`
 
 ## Deploying
-You need SSH access to the deployment server. [Generate an Ed25519 key-pair (if you don't have one)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and ask [Matt](https://maatt.fr/contact) (`maatt.fr` on Discord) for access.
+You need SSH access to the deployment server. [Generate an Ed25519 key-pair (if you don't have one)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and ask [Matt](https://maatt.fr) (`maatt.fr` on Discord) for access.
 
 0. Install rsync and a `make` tool (like GNU make).
 1. `make deploy` or `make deploy-stage`
