@@ -12,3 +12,6 @@ external_links_no_referrer= true
 
 [link_checker]
 external_level= "warn"
+
+[extra]
+discord_url= "https://discord.gg/HMWFMAE3XQ"
