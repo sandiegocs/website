@@ -18,4 +18,4 @@ We offer workshops for students such as coding interview preparation, introducti
 
 Our vision is uniting free-thinkers, self-starters alike and connect them to an ever-expanding network of peers, professionals, resources and opportunity towards their path to success.
 
-Interested in becoming a part of the team? We are looking for intelligent, driven and like-minded individuals like you: [Apply to SDCS today](https://docs.google.com/forms/d/e/1FAIpQLSeonzl4QHPYOwpJj-mtQd-CBJgMZOtLbSaJw9eTN68MjjG_vQ/viewform)
+Interested in becoming a part of the team? We are looking for intelligent, driven and like-minded individuals like you: **[apply to SDCS today.](https://docs.google.com/forms/d/e/1FAIpQLSeonzl4QHPYOwpJj-mtQd-CBJgMZOtLbSaJw9eTN68MjjG_vQ/viewform)**
