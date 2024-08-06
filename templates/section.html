@@ -6,9 +6,13 @@
 	be the only section (this being `/news`).
 #}
 
+{% block head_class %}long b{% endblock %}
 {% block header %}
-    <section><h1>{{section.title}}</h1></section>
+    <div>
+        <h1>{{section.title}}</h1>
+    </div>
 {% endblock %}
+
 
 {% block content %}
 	<section>{{ section.content | safe }}</section>
