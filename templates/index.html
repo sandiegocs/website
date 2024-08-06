@@ -1,33 +1,38 @@
 {% extends "base.html" %}
 
-{% block content %}
-<header class="sxs">
+{% block header %}
+<div id="hero" class="sxs">
     <div>
-        <h2>What's <em>your</em> vision?</h2>
-        <div>
+        <h2>What's <em><u>your</u></em> vision?</h2>
+        <div class="stack">
             <a href="/join" data-umami-event="Join today in header">Join today &rarr;</a>
             <a href="/wiki">Wiki &rarr;</a>
         </div>
     </div>
-    <img src="https://cdn.chocobun.net/sdcs/eye.jpg">
-</header>
+    <!--<img src="https://cdn.chocobun.net/sdcs/eye.png">-->
+    <img src="/assets/eye.png">
+</div>
+{% endblock %}
 
-<section class="b">
-    <h2>Next meeting</h2>
-    <noscript>
-        <span>Sorry, this requires JavaScript to load the next meeting. You can <a href="https://events-api.sandiegocs.net/v1/all">view the raw data</a> or see the <a href="{{ config.extra.discord_url }}">latest information in our Discord server.</a></span>
-    </noscript>
-    <div class="sxs">
-        <div>
-            <h3>0000-00-00 <span>XXXXXXXX</span></h3>
-            <h2>00:00 AM</h2>
+{% block content %}
+<section class="long b">
+    <div>
+        <h2>Next meeting</h2>
+        <noscript>
+            <span>Sorry, this requires JavaScript to load the next meeting. You can <a href="https://events-api.sandiegocs.net/v1/all">view the raw data</a> or see the <a href="{{ config.extra.discord_url }}">latest information in our Discord server.</a></span>
+        </noscript>
+        <div class="sxs mono">
+            <div>
+                <h3>0000-00-00 <span class="role advisor">XXXXXXXX</span></h3>
+                <h2>00:00 AM</h2>
+            </div>
+            <div>
+                <h3>Room</h3>
+                <h2>000X</h2>
+            </div>
         </div>
-        <div>
-            <h3>Room</h3>
-            <h2>000X</h2>
-        </div>
+        <span><a href="" data-umami-event="Add next event to calendar">Add to calendar &rarr;</a></span>
     </div>
-    <span><a href="" data-umami-event="Add next event to calendar">Add to calendar &rarr;</a></span>
 </section>
 
 <section>
@@ -35,14 +40,16 @@
     {{ section.content | safe }}
 </section>
 
-<section class="sxs b">
-    <div>
-        <h2>27</h2>
-        <span>Active members</span>
-    </div>
-    <div>
-        <h2>271</h2>
-        <span>Alumni</span>
+<section class="long b">
+    <div class="sxs" align="center">
+        <div>
+            <h2>27</h2>
+            <span>Active members</span>
+        </div>
+        <div>
+            <h2>271</h2>
+            <span>Alumni</span>
+        </div>
     </div>
 </section>
 
@@ -53,10 +60,15 @@
         {% for member in team.contributors %}
         <div class="card">
             <h3>{{ member.name }}</h3>
-            {% if member.role or member.linkedin or member.portfolio %}<span>{% if member.role == "Officer" %}<span class="role officer">Officer</span>{% elif member.role == "Advisor" %}<span class="role advisor">Advisor</span>{% endif %} {% if member.linkedin %}<a href="{{ member.linkedin }}" data-umami-event="Went to member LinkedIn">LinkedIn</a>{% endif %} {% if member.portfolio %}<a href="{{ member.portfolio }}" data-umami-event="Went to member portfolio">Portfolio</a>{% endif %}</span>{% endif %}
+            {% if member.role or member.linkedin %}
+            <span>{% if member.role %}<span class="role">{{ member.role }}</span>{% endif %}
+            {% if member.linkedin %}<a href="{{ member.linkedin }}" data-umami-event="Went to {{member.name}}'s LinkedIn">LinkedIn</a>{% endif %}</span>{% endif %}
         </div>
         {% endfor %}
     </div>
+    <div class="card sxs">
+        <h3>Andrew Huang</h3>
+        <span class="role advisor">Advisor</span>
 </section>
 {% endblock content %}
 
