@@ -2,7 +2,7 @@
 title= "San Diego CS"
 +++
 
-San Diego Computer Society (SDCS) is a non-profit, tech-incubator for college students founded out of [San Diego Miramar College.](https://sdmiramar.edu)
+San Diego Computer Society (SDCS) is a non-profit tech-incubator for college students founded out of [San Diego Miramar College.](https://sdmiramar.edu)
 
 ![Group photo from 20XX](/assets/team-photo_legacy.jpg)
 
