@@ -1,20 +1,12 @@
 {
 	"contributors": [
 		{
-			"name": "Andrew Huang",
-			"role": "Advisor"
-		}, {
 			"name": "Brian Hall",
 			"role": "Officer"
 		}, {
 			"name": "Hieu Le",
-			"role": "Officer",
+			"role": "President",
 			"linkedin": "https://linkedin.com/in/hieu-le-09bb9525a"
-		}, {
-			"name": "Matt RONCHETTO",
-			"portfolio": "https://maatt.fr",
-			"linkedin": "https://fr.linkedin.com/in/matthewronchetto",
-			"role": "Officer"
 		}, {
 			"name": "Mitch Heitstuman",
 			"linkedin": "https://linkedin.com/in/mitchell-heitstuman-23347b2a2/",
