@@ -15,6 +15,10 @@ a {
 p > a { text-decoration: underline; }
 a:hover { color: #0f7; }
 pre { overflow-x: scroll; }
+pre {
+    background: #222;
+    padding: .5rem;
+}
 section img,
 article img {
     width: 100%;
@@ -23,15 +27,22 @@ article img {
     display: block;
 }
 
-header, section, footer {
+header, section, article, footer {
     margin: 0 auto;
     padding: 1rem 2rem;
 }
 section h2 { margin-top: 0; }
+.home_nav {
+    display: flex;
+    justify-content: center;
+    margin: .5rem auto;
+}
 
 #hero {
     margin: 6rem auto;
+    flex-flow: column-reverse;
 }
+#hero img { max-width: 300px; }
 #hero h2 {
     font-weight: 400;
     font-size: 3rem;
@@ -43,12 +54,24 @@ section h2 { margin-top: 0; }
     padding: 2rem 2rem;
 }
 .long > div { margin: 0 auto; }
+.long > div > h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+footer h2 { margin: 0; }
+.home_nav > img, footer img { width: 100px; }
 
 .stack, .sxs, .sxs-foot {
     display: flex;
     flex-flow: column;
 }
-
+.sxs >:first-child { margin-bottom: 1rem; }
 .grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -74,24 +97,35 @@ section h2 { margin-top: 0; }
     padding: .3rem 1rem;
 }
 .advisor { background: #0f7; }
+
 @media (min-width: 500px) {
     .grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
 @media (min-width: 800px) {
-    header, .long > div, section, footer { max-width: 90ch; }
+    header, .long > div, section, article, footer { max-width: 90ch; }
+    #hero > img { max-width: revert; }
     .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .long {
         max-width: revert;
         padding: 2rem 0;
     }
 
+    main > img,
+    article > p > img { max-width: 800px; }
+
     .sxs,
-    .sxs-foot {
+    .sxs-foot,
+    #hero {
         flex-flow: row;
         justify-content: space-between;
     }
-    .sxs-foot >:first-child { flex: 1; }
-    .sxs >:first-child { margin-right: 4rem; }
+    .sxs-around { justify-content: space-around; }
+    .sxs-foot >:first-child { flex: 2; }
+    .sxs-foot > div { flex: 1; }
+    .sxs >:first-child {
+        margin-right: 4rem;
+        margin-bottom: 0;
+    }
 }
 
 ::selection {
@@ -113,50 +147,7 @@ iframe {
     margin: 0 auto;
     max-width: 100%;
 }
-
-.border {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  border-radius: 5px;
-  border: 2px solid #000;
-  width: 100%;
-  margin: 1rem 0;
-}
-.border > img {
-    max-width: 400px;
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-}
-.border > .item { padding: 1rem }
-.border > .item > a { font-size: 1.25rem; }
-
 hr {
     border: 1px solid #0002;
     margin: 1rem 0;
 } /* credit to Daniel — https://cyckl.net */
-footer {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-}
-@media (min-width: 800px) {
-    .item {
-        display: flex;
-        justify-content: space-between;
-    }
-    .border { flex-direction: row; }
-    .border > img { border-radius: 5px 0 0 5px; }
-    .border > .item {
-        display: flex;
-        flex-direction: column;
-    }
-    .border > .item > a { font-size: 1.5rem; }
-    #team { max-width: 100ch; }
-    footer {
-        flex-direction: row;
-        justify-content: space-between; /* ideally, keep centre item in centre on desktop */
-    }
-    main > img,
-    article > p > img { max-width: 800px; }
-}
