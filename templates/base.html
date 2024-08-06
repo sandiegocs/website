@@ -32,8 +32,8 @@
 		{% endif %}
 	</head>
 	<body>
-		<header>
-			<a href="/" align="center"><img src="/logo.jpg" alt="SDCS"></a>
+		<a href="/" class="home_nav"><img src="/logo.svg" alt="SDCS"></a>
+		<header class="{% block head_class %}{% endblock %}">
 			{% block header %}{% endblock %}
 		</header>
 		<main>
@@ -42,14 +42,14 @@
 		<hr>
 		<footer class="sxs-foot">
 			<div>
-				<img src="https://cdn.chocobun.net/sdcs/logo.jpg" alt="San Diego Computer Science">
+				<img src="/logo.svg" alt="San Diego Computer Science">
 			</div>
 			<div>
 				<h2>Club</h2>
 				<ul>
+					<li><a href="/about">About us &rarr;</a></li>
 					<li><a href="/news">News &rarr;</a></li>
 					<li><a href="/wiki">Wiki &rarr;</a></li>
-					<li><a href="/contact">Contact &rarr;</a></li>
 				</ul>
 			</div>
 			<div>
