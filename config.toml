@@ -1,7 +1,7 @@
 base_url= "https://sandiegocs.net"
 default_language= "en"
 compile_sass= false
-generate_feed= true
+generate_feeds= true
 ignored_content= ["**/.DS_Store"] # prevent weird things with Macs
 
 [markdown]
