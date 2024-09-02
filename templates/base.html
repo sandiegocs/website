@@ -5,6 +5,10 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<title>{% if page.title %}{{page.title|safe}} | San Diego CS{% elif section.title %}{{section.title|safe}} | San Diego CS{% else %}San Diego CS{% endif %}</title>
 		<link rel="stylesheet" href="{{config.base_url}}/style.css">
+		<link rel="preconnect" href="https://fonts.bunny.net">
+		<link rel="preconnect" href="https://cdn.chocobun.net">
+		<link rel="preconnect" href="https://umami.chocobun.net">
+		<link href="https://fonts.bunny.net/css?family=eb-garamond:400,400i,800,800i|jetbrains-mono:400,400i,700,700i" rel="stylesheet">
 		<meta property="og:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
 		<meta property="twitter:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
 		<link rel="canonical" href="{{current_url | safe}}">
@@ -28,25 +32,44 @@
 		{% endif %}
 	</head>
 	<body>
-		<header>
-			<nav>
-				<a href="/"><span>SDCS</span></a>
-				{% block nav %}{% endblock %}
-			</nav>
+		<a href="/" class="home_nav"><img src="/logo.svg" alt="SDCS"></a>
+		<header class="{% block head_class %}{% endblock %}">
 			{% block header %}{% endblock %}
 		</header>
 		<main>
 			{% block content %}{% endblock %}
 		</main>
 		<hr>
-		<footer>
-			<span>
-				&copy; 2023 San Diego CS.<br>
-
-				<a href="https://discord.gg/HMWFMAE3XQ">discord</a> | <a href="https://www.instagram.com/sandiegocomputerscience/">instagram</a> | <a href="https://www.youtube.com/@sandiegocomputerscience">youtube</a> | <a href="https://www.linkedin.com/company/sandiegocomputerscience/">linkedin</a> | <a href="{{config.base_url|safe}}/contact">contact</a>
-			</span>
-			<span><a href="https://github.com/sandiegocs/website">source.</a></span>
+		<footer class="sxs-foot">
+			<div>
+				<img src="/logo.svg" alt="San Diego Computer Science">
+			</div>
+			<div>
+				<h2>Club</h2>
+				<ul>
+					<li><a href="/about">About us &rarr;</a></li>
+					<li><a href="/news">News &rarr;</a></li>
+					<li><a href="/wiki">Wiki &rarr;</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>Find us</h2>
+				<ul>
+					<li><a href="{{ config.extra.discord_url }}">Discord &rarr;</a></li>
+					<li><a href="https://instagram.com/sandiegocomputerscience/">Instagram &rarr;</a></li>
+					<li><a href="https://youtube.com/@sandiegocomputerscience">YouTube &rarr;</a></li>
+					<li><a href="https://linkedin.com/company/sandiegocomputerscience">LinkedIn &rarr;</a></li>
+				</ul>
+			</div>
+			<div>
+				<h2>This site</h2>
+				<ul>
+					<li><a href="https://github.com/sandiegocs/website">Source code &rarr;</a></li>
+					<li><a href="/contact">Contact &rarr;</a></li>
+				</ul>
+			</div>
 		</footer>
 	</body>
 	{% block scripts %}{% endblock %}
+	<script async defer src="https://umami.chocobun.net/script.js" data-website-id="afc700af-94d4-4858-8528-5b0db0a6b0de" data-domains="sandiegocs.net,www.sandiegocs.net,sdcs.club,www.sdcs.club"></script>
 </html>

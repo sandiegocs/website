@@ -1,37 +1,24 @@
 {
 	"contributors": [
 		{
-			"user": "ahuang",
-			"name": "Andrew Huang",
-			"role": "Advisor"
-		}, {
-			"user": "pubmix",
-			"name": "Jeremy Fortner",
-			"bio": "Your mind is a canvas.",
-			"portfolio": "https://pubmix.site",
-			"linkedin": "https://linkedin.com/in/pubmix/",
-			"role": "Officer"
-		}, {
-			"user": "fuge03",
-			"name": "Victor Fugere",
-			"role": "Officer",
-			"linkedin": "https://www.linkedin.com/in/victor-fugere-2b833a220/"
-		}, {
-			"user": "doamatto",
-			"name": "Matt RONCHETTO",
-			"bio": "I have a habit of making very attractive Nintendo characters or so I've been told.",
-			"portfolio": "https://maatt.fr",
-			"linkedin": "https://fr.linkedin.com/in/matthewronchetto",
-			"role": "Officer"
-		}, {
-			"user": "gamecake161",
 			"name": "Brian Hall",
 			"role": "Officer"
 		}, {
-			"user": "thecreamcat",
+			"name": "Hieu Le",
+			"role": "President",
+			"linkedin": "https://linkedin.com/in/hieu-le-09bb9525a"
+		}, {
+			"name": "Mitch Heitstuman",
+			"linkedin": "https://linkedin.com/in/mitchell-heitstuman-23347b2a2/",
 			"role": "Officer"
 		}, {
-			"user": "trixiegoat",
+			"name": "Morgan",
+			"role": "Officer"
+		}, {
+			"name": "Nano",
+			"role": "Officer"
+		}, {
+			"name": "Pranav Eluri",
 			"role": "Officer"
 		}
 	]
