@@ -198,8 +198,15 @@ div.card span.name {
 div.card span.role {
 	font-size: 0.9rem;
 	padding: 0 1rem;
-	border: 1px solid #FDB;
 	border-radius: 0.25rem;
+	background: #FDB;
+	color: #511A1F;
+}
+
+div.card span.role.advisor {
+	background: unset;
+	color: unset;
+	border: 1px solid #FDB;
 }
 
 div.card > * {
