@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 2rem; }
 
 a {
-	color: white;
+	color: unset;
 	text-decoration: none;
 }
 
@@ -128,16 +128,19 @@ section img, article img {
 div.mini {
 	display: flex;
 	align-items: stretch;
+	gap: 2rem
 }
 
 div.mini > div {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	flex-grow: 1;
-	padding: 1rem;
+	padding: 1rem 0;
 	gap: 0.5rem;
 }
+
+div.mini.center > div { align-items: center; }
 
 div.mini .large {
 	font-weight: 100; /* we don't import this */
