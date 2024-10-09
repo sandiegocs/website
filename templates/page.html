@@ -1,28 +1,26 @@
-{% extends "base.html" %}
-
-{% block head_class %}long b{% endblock %}
-{% block header %}
-    <div>
-        <h1>{{page.title}}</h1>
-        {% if page.authors or page.date %}
-        <span>
-            {% if page.authors %}
-            Written by
-            {% set authors = page.authors | join(sep=", ") %}
-            {{ authors }}
-            {% endif %}
-            {% if page.updated %}
-            {{page.updated}} (orig. {{page.date}})
-            {% else %}
-            {{page.date}}
-            {% endif %}
-        </span>
-        {% endif %}
-    </div>
-{% endblock %}
-
-{% block content %}
-    <article>
-        {{ page.content | safe }}
-    </article>
+{% extends "base.html" %} {% block header %}
+<header class="bg-accent">
+	<div class="wrapper">
+		<nav>
+			<a href="/">
+				<img class="logo" src="/logo.svg" alt="SDCS" />
+			</a>
+		</nav>
+		<div>
+			<h1>{{page.title}}</h1>
+			{% if page.authors or page.date %}
+			<span>
+				{% if page.authors %} Written by {% set authors = page.authors |
+				join(sep=", ") %} {{ authors }} {% endif %} {% if page.updated
+				%} {{page.updated}} (orig. {{page.date}}) {% else %}
+				{{page.date}} {% endif %}
+			</span>
+			{% endif %}
+		</div>
+	</div>
+</header>
+{% endblock %} {% block content %}
+<article>
+	<div class="wrapper">{{ page.content | safe }}</div>
+</article>
 {% endblock %}

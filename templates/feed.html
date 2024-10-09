@@ -1,23 +1,32 @@
-{% extends "base.html" %}
-
-{% block head_class %}long b{% endblock %}
-{% block header %}
-    <div>
-        <h1>{{section.title}}</h1>
-    </div>
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block head_class %}long b{% endblock %} {% block
+header %}
+<header class="bg-accent">
+	<div class="wrapper">
+		<nav>
+			<a href="/">
+				<img class="logo" src="/logo.svg" alt="SDCS" />
+			</a>
+		</nav>
+		<div>
+			<h1>{{section.title}}</h1>
+		</div>
+	</div>
+</header>
+{% endblock %} {% block content %}
 <article>
-	<ul>
-	    {%- set pages = section.pages -%}
-	    {%- for page in pages | sort(attribute="date") | reverse -%}
-	    {%- set date = page.date | date(format="%+") %}
-	    <li>
-	      <a href="{{page.permalink}}">{{ page.title }}</a>
-	      (<time datetime="{{ date }}">{{ page.date | date(format="%Y-%m-%d") }}</time>)
-      	</li>
-	    {%- endfor %}
-	</ul>
+	<div class="wrapper">
+		<ul class="links enhanced plus-meta">
+			{%- set pages = section.pages -%} {%- for page in pages |
+			sort(attribute="date") | reverse -%} {%- set date = page.date |
+			date(format="%+") %}
+			<li class="">
+				<a href="{{page.permalink}}">{{ page.title }}</a>
+				<time class="meta" datetime="{{ date }}"
+					>{{ page.date | date(format="%Y-%m-%d") }}</time
+				>
+			</li>
+			{%- endfor %}
+		</ul>
+	</div>
 </article>
 {% endblock %}

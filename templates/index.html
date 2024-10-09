@@ -1,23 +1,50 @@
-{% extends "base.html" %}
-
-{% block header %}
-<div id="hero" class="sxs">
+{% extends "base.html" %} {% block header %}
+<header class="tall">
+	<div class="wrapper">
+		<nav>
+			<a href="/">
+				<img class="logo" src="/logo.svg" alt="SDCS" />
+			</a>
+		</nav>
+		<div class="jumbo content">
+			<span class="large serif"
+				>I'd just like to interject for a moment. What you're refering
+				to as Linux, is in fact, GNU/Linux, or as I've recently taken to
+				calling it, GNU plus Linux. Linux is not an operating system
+				unto itself, but rather another free component of a fully
+				functioning GNU system made useful by the GNU corelibs, shell
+				utilities and vital system components comprising a full OS as
+				defined by POSIX. Many computer users run a modified version of
+				the GNU system every day, without realizing it. Through a
+				peculiar turn of events, the version of GNU which is widely used
+				today is often called Linux, and many of its users are not aware
+				that it is basically the GNU system, developed by the GNU
+				Project. There really is a Linux, and these people are using it,
+				but it is just a part of the system they use. Linux is the
+				kernel: the program in the system that allocates the machine's
+				resources to the other programs that you run. The kernel is an
+				essential part of an operating system, but useless by itself; it
+				can only function in the context of a complete operating system.
+				Linux is normally used in combination with the GNU operating
+				system: the whole system is basically GNU with Linux added, or
+				GNU/Linux. All the so-called Linux distributions are really
+				distributions of GNU/Linux!</span
+			>
+			<ul class="links">
+				<li>
+					<a href="/join" data-umami-event="Join today in header"
+						>Join today &rarr;</a
+					>
+				</li>
+				<li><a href="/wiki">Wiki &rarr;</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+{% endblock %} {% block content %}
+<!--<section class="long bg-accent">
     <div>
-        <h2>What's <em><u>your</u></em> vision?</h2>
-        <div class="stack">
-            <a href="/join" data-umami-event="Join today in header">Join today &rarr;</a>
-            <a href="/wiki">Wiki &rarr;</a>
-        </div>
-    </div>
-    <!--<img src="https://cdn.chocobun.net/sdcs/eye.png">-->
-    <img src="/assets/eye.png">
-</div>
-{% endblock %}
-
-{% block content %}
-<!--<section class="long b">
-    <div>
-        <h2>Next meeting</h2>
+        <h1>Next meeting</h1>
         <noscript>
             <span>Sorry, this requires JavaScript to load the next meeting. You can <a href="https://events-api.sandiegocs.net/v1/all">view the raw data</a> or see the <a href="{{ config.extra.discord_url }}">latest information in our Discord server.</a></span>
         </noscript>
@@ -36,43 +63,48 @@
 </section>-->
 
 <section>
-    <h2>About SDCS</h2>
-    {{ section.content | safe }}
+	<div class="wrapper">
+		<h1>About SDCS</h1>
+		{{ section.content | safe }}
+	</div>
 </section>
 
-<section class="long b">
-    <div class="sxs sxs-around" align="center">
-        <div>
-            <h2>27</h2>
-            <span>Active members</span>
-        </div>
-        <div>
-            <h2>271</h2>
-            <span>Alumni</span>
-        </div>
-    </div>
+<section class="bg-accent">
+	<div class="wrapper">
+		<div class="mini">
+			<div>
+				<span class="large stats">27</span>
+				<span>Active members</span>
+			</div>
+			<hr class="vert" />
+			<div>
+				<span class="large stats">271</span>
+				<span>Alumni</span>
+			</div>
+		</div>
+	</div>
 </section>
 
-<section>
-    <h2>Our team</h2>
-    <div class="grid">
-        {% set team = load_data(path="team.json") %}
-        {% for member in team.contributors %}
-        <div class="card">
-            <h3>{{ member.name }}</h3>
-            {% if member.role or member.linkedin %}
-            <span>{% if member.role %}<span class="role">{{ member.role }}</span>{% endif %}
-            {% if member.linkedin %}<a href="{{ member.linkedin }}" data-umami-event="Went to {{member.name}}'s LinkedIn">LinkedIn</a>{% endif %}</span>{% endif %}
-        </div>
-        {% endfor %}
-    </div>
-    <div class="card sxs">
-        <h3>Andrew Huang</h3>
-        <span class="role advisor">Advisor</span>
+<section class="bg-alt">
+	<div class="wrapper">
+		<h1>Our team</h1>
+		<div class="grid">
+			{% set team = load_data(path="team.json") %} {% for member in
+			team.contributors %}
+			<div class="card">
+				<span class="name">{{ member.name }}</span>
+				{% if member.role %}
+				<span class="role">{{ member.role }}</span>
+				{% endif %}
+			</div>
+			{% endfor %}
+			<div class="card horizontal">
+				<span class="name">Andrew Huang</span>
+				<span class="role advisor">Advisor</span>
+			</div>
+		</div>
+	</div>
 </section>
-{% endblock content %}
-
-{#
-{% block scripts %}
+{% endblock content %} {# {% block scripts %}
 <script async src="{{config.base_url}}/cal_fetch.js"></script>
 {% endblock scripts %}#}

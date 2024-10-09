@@ -1,75 +1,117 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<title>{% if page.title %}{{page.title|safe}} | San Diego CS{% elif section.title %}{{section.title|safe}} | San Diego CS{% else %}San Diego CS{% endif %}</title>
-		<link rel="stylesheet" href="{{config.base_url}}/style.css">
-		<link rel="preconnect" href="https://fonts.bunny.net">
-		<link rel="preconnect" href="https://cdn.chocobun.net">
-		<link rel="preconnect" href="https://umami.chocobun.net">
-		<link href="https://fonts.bunny.net/css?family=eb-garamond:400,400i,800,800i|jetbrains-mono:400,400i,700,700i" rel="stylesheet">
-		<meta property="og:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
-		<meta property="twitter:title" content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}">
-		<link rel="canonical" href="{{current_url | safe}}">
-		{% if page.authors %}
-        {% set authors = page.authors | join(sep=", ") %}
-		<meta name="author" content="{{authors}}">
-		<meta property="og:type" content="article">
-		{% endif %}
-		{% if page.description %}
-			{% set desc = page.description %}
-		{% elif section.description %}
-			{% set desc = section.description %}
-		{% else %}
-			{% set desc = "San Diego Computer Society (SDCS) is a non-profit, tech-incubator for college students founded out of San Diego Miramar College." %}
-		{% endif %}
-		<meta name="description" content="{{desc}}">
-		<meta property="og:description" content="{{desc}}">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<title>
+			{% if page.title %}{{page.title|safe}} | San Diego CS{% elif
+			section.title %}{{section.title|safe}} | San Diego CS{% else %}San
+			Diego CS{% endif %}
+		</title>
+		<link rel="stylesheet" href="{{config.base_url}}/style.css" />
+		<link rel="preconnect" href="https://fonts.bunny.net" />
+		<link rel="preconnect" href="https://cdn.chocobun.net" />
+		<link rel="preconnect" href="https://umami.chocobun.net" />
+		<link
+			href="https://fonts.bunny.net/css?family=eb-garamond:400,400i,800,800i|jetbrains-mono:400,400i,700,700i"
+			rel="stylesheet"
+		/>
+		<meta
+			property="og:title"
+			content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}"
+		/>
+		<meta
+			property="twitter:title"
+			content="{% if page.title %}{{page.title|safe}}{% elif section.title %}{{section.title|safe}}{%endif%}"
+		/>
+		<link rel="canonical" href="{{current_url | safe}}" />
+		{% if page.authors %} {% set authors = page.authors | join(sep=", ") %}
+		<meta name="author" content="{{authors}}" />
+		<meta property="og:type" content="article" />
+		{% endif %} {% if page.description %} {% set desc = page.description %}
+		{% elif section.description %} {% set desc = section.description %} {%
+		else %} {% set desc = "San Diego Computer Society (SDCS) is a
+		non-profit, tech-incubator for college students founded out of San Diego
+		Miramar College." %} {% endif %}
+		<meta name="description" content="{{desc}}" />
+		<meta property="og:description" content="{{desc}}" />
 		{% if page.extra.thumb %}
-		<meta property="og:image" content="{{config.base_url | safe}}{{ page.extra.thumb | safe }}">
-		<meta name="twitter:image" content="{{config.base_url | safe}}{{ page.extra.thumb | safe }}">
+		<meta
+			property="og:image"
+			content="{{config.base_url | safe}}{{ page.extra.thumb | safe }}"
+		/>
+		<meta
+			name="twitter:image"
+			content="{{config.base_url | safe}}{{ page.extra.thumb | safe }}"
+		/>
 		{% endif %}
 	</head>
 	<body>
-		<a href="/" class="home_nav"><img src="/logo.svg" alt="SDCS"></a>
-		<header class="{% block head_class %}{% endblock %}">
-			{% block header %}{% endblock %}
-		</header>
-		<main>
-			{% block content %}{% endblock %}
-		</main>
-		<hr>
-		<footer class="sxs-foot">
-			<div>
-				<img src="/logo.svg" alt="San Diego Computer Science">
-			</div>
-			<div>
-				<h2>Club</h2>
-				<ul>
-					<li><a href="/about">About us &rarr;</a></li>
-					<li><a href="/news">News &rarr;</a></li>
-					<li><a href="/wiki">Wiki &rarr;</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>Find us</h2>
-				<ul>
-					<li><a href="{{ config.extra.discord_url }}">Discord &rarr;</a></li>
-					<li><a href="https://instagram.com/sandiegocomputerscience/">Instagram &rarr;</a></li>
-					<li><a href="https://youtube.com/@sandiegocomputerscience">YouTube &rarr;</a></li>
-					<li><a href="https://linkedin.com/company/sandiegocomputerscience">LinkedIn &rarr;</a></li>
-				</ul>
-			</div>
-			<div>
-				<h2>This site</h2>
-				<ul>
-					<li><a href="https://github.com/sandiegocs/website">Source code &rarr;</a></li>
-					<li><a href="/contact">Contact &rarr;</a></li>
-				</ul>
+		{% block header %}{% endblock %}
+		<main>{% block content %}{% endblock %}</main>
+		<footer>
+			<div class="wrapper">
+				<div>
+					<a href="/">
+						<img class="logo" src="/logo.svg" alt="SDCS" />
+					</a>
+				</div>
+				<div>
+					<h2>Club</h2>
+					<ul class="links">
+						<li><a href="/about">About us &rarr;</a></li>
+						<li><a href="/news">News &rarr;</a></li>
+						<li><a href="/wiki">Wiki &rarr;</a></li>
+					</ul>
+				</div>
+				<div>
+					<h2>Find us</h2>
+					<ul class="links">
+						<li>
+							<a href="{{ config.extra.discord_url }}"
+								>Discord &rarr;</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://instagram.com/sandiegocomputerscience/"
+								>Instagram &rarr;</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://youtube.com/@sandiegocomputerscience"
+								>YouTube &rarr;</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://linkedin.com/company/sandiegocomputerscience"
+								>LinkedIn &rarr;</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2>This site</h2>
+					<ul class="links">
+						<li>
+							<a href="https://github.com/sandiegocs/website"
+								>Source code &rarr;
+							</a>
+						</li>
+						<li><a href="/contact">Contact &rarr;</a></li>
+					</ul>
+				</div>
 			</div>
 		</footer>
 	</body>
 	{% block scripts %}{% endblock %}
-	<script async defer src="https://umami.chocobun.net/script.js" data-website-id="eabae1b1-30bc-421c-b944-2ecb356d9155" data-domains="sandiegocs.net,www.sandiegocs.net,sdcs.club,www.sdcs.club"></script>
+	<script
+		async
+		defer
+		src="https://umami.chocobun.net/script.js"
+		data-website-id="eabae1b1-30bc-421c-b944-2ecb356d9155"
+		data-domains="sandiegocs.net,www.sandiegocs.net,sdcs.club,www.sdcs.club"
+	></script>
 </html>
