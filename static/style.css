@@ -1,6 +1,26 @@
+/* regular colors */
+/* :root {
+	--fg: #FFF;
+	--accent: #FA0;
+	--bg: #000;
+	--bg-alt: #111;
+	--bg-alt-more: #222;
+	--bg-accent: #024;
+} */
+
+/* autumn colors */
+:root {
+	--fg: #FDB;
+	--accent: #D23736;
+	--bg: #21080C;
+	--bg-alt: #3E0E16;
+	--bg-alt-more: #511A1F;
+	--bg-accent: var(--bg-alt-more);
+}
+
 html, body {
-	background: #21080C;
-	color: #FDB;
+	background: var(--bg);
+	color: var(--fg);
 	margin: 0;
 	padding: 0;
 	font-family: "JetBrains Mono", monospace;
@@ -27,7 +47,7 @@ a {
 }
 
 a:hover {
-	color: #D23736;
+	color: var(--accent);
 	text-decoration: underline;
 }
 
@@ -35,8 +55,8 @@ a:hover {
 p a { text-decoration: underline; }
 
 /* Background colors? Finally! */
-.bg-accent { background: #511A1F; }
-.bg-alt { background: #3E0E16; }
+.bg-alt { background: var(--bg-alt); }
+.bg-accent { background: var(--bg-accent); }
 
 /* Since I can't set full-wide background independent of section width, we'll just do everything individually */
 div.wrapper {
@@ -89,10 +109,10 @@ ul.links {
 
 pre, code {
 	font-family: inherit;
-	background: #3E0E16;
+	background: var(--bg-alt);
 	padding: 0 0.5rem;
 	border-radius: 0.25rem;
-	border: 1px solid #511A1F;
+	border: 1px solid var(--bg-alt-more);
 }
 
 /* Handles the fact that <code> is INSIDE <pre> by unsetting everything since <pre> has it already. Stupid. */
@@ -117,7 +137,7 @@ section img, article img {
 .links.enhanced > * {
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #511A1F;
+	border-bottom: 1px solid var(--bg-alt-more);
 	padding: 0.5rem 0;
 }
 
@@ -160,7 +180,8 @@ hr.vert {
 	width: 1px;
 	border: none;
 	margin: 0;
-	background: #FDB4;
+	background: var(--fg);
+	opacity: 0.2;
 }
 
 /*
@@ -178,7 +199,7 @@ div.grid {
 }
 
 div.card {
-	background: #511A1F;
+	background: var(--bg-alt-more);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -199,14 +220,14 @@ div.card span.role {
 	font-size: 0.9rem;
 	padding: 0 1rem;
 	border-radius: 0.25rem;
-	background: #FDB;
-	color: #511A1F;
+	background: var(--fg);
+	color: var(--bg-alt-more);
 }
 
 div.card span.role.advisor {
 	background: unset;
 	color: unset;
-	border: 1px solid #FDB;
+	border: 1px solid var(--fg);
 }
 
 div.card > * {
