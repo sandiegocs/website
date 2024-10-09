@@ -10,9 +10,9 @@ build-staging:
 
 deploy: build deploy-rsync
 stage: build-staging deploy-rsync-staging
-deploy-rsync: 
+deploy-rsync:
 	cp Caddyfile public/Caddyfile
-	rsync -avrz public/ git@maatt.fr:sandiegocs.net
+	rsync -avrz -e 'ssh -p 49002' public/ web@maatt.fr:sandiegocs.net
 deploy-rsync-staging:
 	cp Caddyfile.staging public/Caddyfile
-	rsync -avrz public/ git@maatt.fr:staging.sandiegocs.net
+	rsync -avrz -e 'ssh -p 49002' public/ web@maatt.fr:staging.sandiegocs.net
