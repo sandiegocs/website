@@ -93,7 +93,7 @@ footer div.wrapper > div { flex-grow: 1; }
 footer div.wrapper > div :first-child { margin: 0; }
 
 /* No, just because its big doesn't mean it's a header... semantic HTML ftw! */
-.large { font-size: 3rem; line-height: 100%; }
+.large { font-size: 3rem; line-height: 100%; font-weight: 200; }
 .serif { font-family: "EB Garamond", serif; }
 
 /* Absurdly tiny logo */
