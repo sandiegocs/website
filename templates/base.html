@@ -30,9 +30,7 @@
 		<meta property="og:type" content="article" />
 		{% endif %} {% if page.description %} {% set desc = page.description %}
 		{% elif section.description %} {% set desc = section.description %} {%
-		else %} {% set desc = "San Diego Computer Society (SDCS) is a
-		non-profit, tech-incubator for college students founded out of San Diego
-		Miramar College." %} {% endif %}
+		else %} {% set desc = config.extra.description %} {% endif %}
 		<meta name="description" content="{{desc}}" />
 		<meta property="og:description" content="{{desc}}" />
 		{% if page.extra.thumb %}

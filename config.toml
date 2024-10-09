@@ -1,18 +1,19 @@
-base_url= "https://sandiegocs.net"
-default_language= "en"
-compile_sass= false
-generate_feeds= true
-ignored_content= ["**/.DS_Store"] # prevent weird things with Macs
+base_url = "https://sandiegocs.net"
+default_language = "en"
+compile_sass = false
+generate_feeds = true
+ignored_content = ["**/.DS_Store"]  # prevent weird things with Macs
 
 [markdown]
-render_emoji= true
-external_links_target_blank= false
-external_links_no_follow= true
-external_links_no_referrer= true
+render_emoji = true
+external_links_target_blank = false
+external_links_no_follow = true
+external_links_no_referrer = true
 
 [link_checker]
-external_level= "warn"
+external_level = "warn"
 
 [extra]
-discord_url= "https://discord.gg/HMWFMAE3XQ"
-google_form= "https://docs.google.com/forms/d/e/1FAIpQLSeonzl4QHPYOwpJj-mtQd-CBJgMZOtLbSaJw9eTN68MjjG_vQ/viewform"
+description = "San Diego Computer Society (SDCS) is a non-profit, tech-incubator for college students founded out of San Diego Miramar College."
+discord_url = "https://discord.gg/HMWFMAE3XQ"
+google_form = "https://docs.google.com/forms/d/e/1FAIpQLSeonzl4QHPYOwpJj-mtQd-CBJgMZOtLbSaJw9eTN68MjjG_vQ/viewform"
