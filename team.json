@@ -1,25 +1,38 @@
 {
 	"contributors": [
 		{
-			"name": "Brian Hall",
-			"role": "Officer"
-		}, {
 			"name": "Hieu Le",
 			"role": "President",
 			"linkedin": "https://linkedin.com/in/hieu-le-09bb9525a"
-		}, {
+		},
+		{
+			"name": "Nano",
+			"role": "VP External Affairs"
+		},
+		{
 			"name": "Mitch Heitstuman",
 			"linkedin": "https://linkedin.com/in/mitchell-heitstuman-23347b2a2/",
-			"role": "Officer"
-		}, {
+			"role": "VP Internal Affairs"
+		},
+		{
 			"name": "Morgan",
-			"role": "Officer"
-		}, {
-			"name": "Nano",
-			"role": "Officer"
-		}, {
+			"role": "Treasurer"
+		},
+		{
+			"name": "David",
+			"role": "Secretary"
+		},
+		{
+			"name": "Daniel Calderon",
+			"role": "Marketing"
+		},
+		{
+			"name": "Grace Ho",
+			"role": "Social Manager"
+		},
+		{
 			"name": "Pranav Eluri",
-			"role": "Officer"
+			"role": "ASG Representative"
 		}
 	]
 }
