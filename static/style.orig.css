@@ -8,6 +8,10 @@ html, body {
 	overflow-x: hidden; /* for copypasta meme */
 }
 
+/* for copypasta meme */
+div.meme { display: flex; justify-content: center; } /* center marquee on screen */
+marquee { min-width: 100vw; } /* fill that thang */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "EB Garamond", serif; /* ooo LaTeX */
 	line-height: 100%; /* default line-height is stupid big */
@@ -136,6 +140,7 @@ div.mini > div {
 	flex-direction: column;
 	align-items: flex-start;
 	flex-grow: 1;
+	flex-basis: 0;
 	padding: 1rem 0;
 	gap: 0.5rem;
 }
@@ -230,10 +235,14 @@ div.card.horizontal {
 	footer div.wrapper { flex-direction: column; }
 }
 
+@media (max-width: 800px) and (min-width: 500px) {
+	div.mini .large { font-size: 2.5rem;}
+}
+
 /* Purely for the minis to wrap */
-@media (max-width: 400px) {
-	div.mini { flex-direction: column; }
+@media (max-width: 500px) {
 	hr.vert { display: none; }
+	div.mini { flex-direction: column; }
 }
 
 /* credit to Daniel — https://cyckl.net */
