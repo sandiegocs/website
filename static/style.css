@@ -8,6 +8,10 @@ html, body {
 	overflow-x: hidden; /* for copypasta meme */
 }
 
+/* for copypasta meme */
+div.meme { display: flex; justify-content: center; } /* center marquee on screen */
+marquee { min-width: 100vw; } /* fill that thang */
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: "EB Garamond", serif; /* ooo LaTeX */
 	line-height: 100%; /* default line-height is stupid big */
