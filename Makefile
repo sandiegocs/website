@@ -12,7 +12,7 @@ deploy: build deploy-rsync
 stage: build-staging deploy-rsync-staging
 deploy-rsync:
 	cp Caddyfile public/Caddyfile
-	rsync -avrz -e 'ssh -p 49002' public/ web@maatt.fr:sandiegocs.net
+	rsync -avrz -e 'ssh -p 49002' public/ web@web.chocobun.net:sandiegocs.net
 deploy-rsync-staging:
 	cp Caddyfile.staging public/Caddyfile
-	rsync -avrz -e 'ssh -p 49002' public/ web@maatt.fr:staging.sandiegocs.net
+	rsync -avrz -e 'ssh -p 49002' public/ web@web.chocobun.net:staging.sandiegocs.net
