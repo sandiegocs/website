@@ -1,9 +1,9 @@
 sandiegocs.net {
 	# Cache control
-    header Cache-Control "max-age=3600"
+	header Cache-Control "max-age=3600"
 	header /static/* Cache-Control "max-age=31536000"
 
-	root * /home/web/sandiegocs.net/
+	root * /srv/web/sandiegocs.net/
 	encode zstd gzip
 	file_server {
 		precompressed br
