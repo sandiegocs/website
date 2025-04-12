@@ -1,10 +1,17 @@
-{% extends "base.html" %} {% block header %}
+{% extends "base.html" %}
+
+{% block header %}
 <header class="tall bg-alt">
 	<div class="wrapper">
 		<nav>
 			<a href="/">
 				<img class="logo" src="/logo.svg" alt="SDCS" />
 			</a>
+			<ul>
+				<li><a href="/news">News</a></li>
+				<li><a href="/wiki">Wiki</a></li>
+				<li><a href="/join"><button>Discord</button></a></li>
+			</ul>
 		</nav>
 		<div class="jumbo content">
 			<div class="meme">
@@ -67,7 +74,7 @@
         </div>
         <span><a href="" data-umami-event="Add next event to calendar">Add to calendar &rarr;</a></span>
     </div>
-</section>-->
+</section>
 <section class="bg-accent">
 	<div class="wrapper">
 		<h1>Next meeting</h1>
@@ -126,7 +133,9 @@
 			</div>
 		</div>
 	</div>
-</section>
-{% endblock content %} {# {% block scripts %}
+</section>-->
+{% endblock content %}
+
+{# {% block scripts %}
 <script async src="{{config.base_url}}/cal_fetch.js"></script>
-{% endblock scripts %}#}
+{% endblock scripts %} #}
