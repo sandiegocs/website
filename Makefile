@@ -3,7 +3,6 @@
 build:
 	rm -rf public/
 	zola -r "$(PWD)" build -u https://sandiegocs.net
-	@#zola -r "$(PWD)" build
 build-staging:
 	rm -rf public/
 	zola -r "$(PWD)" build -u https://staging.sandiegocs.net
