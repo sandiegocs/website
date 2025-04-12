@@ -13,14 +13,15 @@ nav > ul li { margin: 0 .5rem; }
 .links > li:first-child { margin-top: 0; }
 
 button {
-	background: #fff;
-	border: 1px solid #fff;
+	background: #FFDDBB;
+	border: 1px solid #FFDDBB;
 	border-radius: 1.3rem;
 	font-size: inherit;
 	padding: .2rem .8rem;
 }
 .outline {
 	background: none;
-	border-color: rgba(255, 255, 255, 0.20);
-	color: #fff;
+	border-color: #FFDDBB40;
+	color: #FFDDBB;
 }
+.meme { margin-bottom: 1.5rem; }
