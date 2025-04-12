@@ -11,7 +11,7 @@ deploy: build deploy-rsync
 stage: build-staging deploy-rsync-staging
 deploy-rsync:
 	cp Caddyfile public/Caddyfile
-	rsync -avrz public/ eur.doamatto.xyz:/home/web/sandiegocs.net
+	rsync -avrz public/ eur.doamatto.xyz:sandiegocs.net
 deploy-rsync-staging:
 	cp Caddyfile.staging public/Caddyfile
-	rsync -avrz public/ eur.doamatto.xyz:/home/web/staging.sandiegocs.net
+	rsync -avrz public/ eur.doamatto.xyz:staging.sandiegocs.net
